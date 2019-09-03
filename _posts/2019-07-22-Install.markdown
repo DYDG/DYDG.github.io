@@ -62,6 +62,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D BUILD_EXAMPLES=ON ..
 ```
 [more infor][more]
+
 [more]: https://linuxize.com/post/how-to-install-opencv-on-ubuntu-18-04/
 ``` c++
 make -j4    (or -j8 typing "nproc" on terminal will be let you knows -j4 or -j8).
