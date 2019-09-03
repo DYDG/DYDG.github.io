@@ -43,7 +43,7 @@ https://github.com/opencv/opencv_contrib/archive/3.4.3.zip
 
 cd ~/opencv_build/opencv 
 mkdir build && cd build 		
-
+``` c++
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D CMAKE_INSTALL_PREFIX=/usr/local \
     -D INSTALL_C_EXAMPLES=ON \
@@ -51,3 +51,4 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D INSTALL_PYTHON_EXAMPLES=ON \
     -D OPENCV_EXTRA_MODULES_PATH=~/opencv_build/opencv_contrib/modules \
     -D BUILD_EXAMPLES=ON ..
+```
