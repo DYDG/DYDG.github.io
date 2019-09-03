@@ -6,7 +6,10 @@ tags: [setup]
 ---
 How to install Qt 5.7.1
 
-[Download Qt 5.7.1 ][https://download.qt.io/archive/qt/5.7/5.7.1/]
+[Download Qt 5.7.1 ][QT]
+
+[QT]:https://download.qt.io/archive/qt/5.7/5.7.1/
+
 
 chọn file  qt-opensource-linux-x64-android-5.7.1.run
 ``` c++
@@ -107,7 +110,9 @@ sudo apt-get install ros-melodic-rosbridge-server
 dowload packge here and copy to director  "src"  in  "catkin_ws/"
 
  
-[ROS_Package_example][https://github.com/fpt-corp/ROS_Package_example.git]
+[ROS_Package_example][ROS]
+
+[ROS]: https://github.com/fpt-corp/ROS_Package_example.git
 
 ``` c++
 

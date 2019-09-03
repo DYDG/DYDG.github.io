@@ -9,6 +9,6 @@ One more, the blog is created just to note some knowledge mine.
 My name Dyleson
 ```
 
-If you have questions, you can ask it through me [Dyleson][facebook_Deleson] for more infor.
+If you have questions, you can ask it through me [Dyleson][facebook_Dyleson] for more infor.
 
-[facebook_Deleson]:      https://www.facebook.com/dy.leson
+[facebook_Dyleson]:      https://www.facebook.com/dy.leson
