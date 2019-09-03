@@ -45,9 +45,9 @@ mkdir ~/opencv_build && cd ~/opencv_build
 [Download opencv_contrib][contrib]
 
 [contrib]: https://github.com/opencv/opencv_contrib/archive/3.4.3.zip
-// extract file .zip  and rename director opencv-3.4.3 to opencv, rename director opencv_contrib-3.4.3 to opencv_contrib
+// extract file .zip  and rename folder opencv-3.4.3 to opencv, rename folder opencv_contrib-3.4.3 to opencv_contrib
 
-// copy 2 director opencv, opencv_contrib to director opencv_build
+// copy 2 folder opencv, opencv_contrib to folder opencv_build
 ``` c++
 cd ~/opencv_build/opencv 
 mkdir build && cd build 		
@@ -111,7 +111,7 @@ sudo apt-get install ros-melodic-rosbridge-server
 
 ``` 
 
-dowload packge here and copy to director  "src"  in  "catkin_ws/"
+dowload packge here and copy to folder  "src"  in  "catkin_ws/"
 
  
 [ROS_Package_example][ROS]
