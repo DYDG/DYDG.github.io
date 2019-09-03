@@ -39,9 +39,11 @@ mkdir ~/opencv_build && cd ~/opencv_build
 ``` 
 
 [Download opencv 3.4.3][opencv]
+
 [opencv]: https://github.com/opencv/opencv/archive/3.4.3.zip
 
 [Download opencv_contrib][contrib]
+
 [contrib]: https://github.com/opencv/opencv_contrib/archive/3.4.3.zip
 // extract file .zip  and rename director opencv-3.4.3 to opencv, rename director opencv_contrib-3.4.3 to opencv_contrib
 
