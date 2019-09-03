@@ -6,7 +6,7 @@ tags: [setup]
 ---
 How to install Qt 5.7.1
 
-https://download.qt.io/archive/qt/5.7/5.7.1/
+[https://download.qt.io/archive/qt/5.7/5.7.1/]
 
 chọn file  qt-opensource-linux-x64-android-5.7.1.run
 ``` c++
