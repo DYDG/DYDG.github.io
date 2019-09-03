@@ -4,7 +4,7 @@ date:   2019-07-22 04:44:23
 categories: [Dyleson]
 tags: [setup]
 ---
-How to install Qt 5.7.1
+#How to install Qt 5.7.1
 
 [Download Qt 5.7.1 ][QT]
 
@@ -25,7 +25,7 @@ sudo apt-get install libglu1-mesa-dev -y
 
 sudo apt-get install mesa-common-dev
 ``` 
-How to install opencv 3.4.3
+#How to install opencv 3.4.3
 ``` c++
 sudo apt install build-essential cmake git pkg-config libgtk-3-dev
 
@@ -45,9 +45,12 @@ mkdir ~/opencv_build && cd ~/opencv_build
 [Download opencv_contrib][contrib]
 
 [contrib]: https://github.com/opencv/opencv_contrib/archive/3.4.3.zip
+```
 // extract file .zip  and rename folder opencv-3.4.3 to opencv, rename folder opencv_contrib-3.4.3 to opencv_contrib
-
+```
+```
 // copy 2 folder opencv, opencv_contrib to folder opencv_build
+```
 ``` c++
 cd ~/opencv_build/opencv 
 mkdir build && cd build 		
@@ -69,10 +72,13 @@ make -j4    (or -j8 typing "nproc" on terminal will be let you knows -j4 or -j8)
 
 sudo make install
 ``` 
+```
 // check version typing "pkg-config --modversion opencv"
-How to install ROS
+```
+#How to install ROS 
+```
 Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse" like picture
-
+```
 ![](https://lh5.googleusercontent.com/u6aRh__8rH7IlFmKwTcZFA9_2nFFbBJmzjdHoBFw_wcB-YarRDcPoxLzymf6qEGmPZVcGy9stcef3PZaWilZX7DgqlLkacnyrkO2_-tU7FlNi829_JyH=w773)
 
 ``` c++
@@ -94,8 +100,9 @@ source ~/.bashrc
 
 sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential
 ```
-
+```
 Create catkin workspace
+```
 ``` c++
 mkdir -p ~/catkin_ws/src
 
@@ -111,9 +118,9 @@ source ~/.bashrc
 sudo apt-get install ros-melodic-rosbridge-server
 
 ``` 
-
+```
 dowload packge here and copy to folder  "src"  in  "catkin_ws/"
-
+```
  
 [ROS_Package_example][ROS]
 
