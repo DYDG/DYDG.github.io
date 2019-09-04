@@ -11,7 +11,7 @@ tags: [setup]
 [QT]:https://download.qt.io/archive/qt/5.7/5.7.1/
 
 
-chọn file  qt-opensource-linux-x64-android-5.7.1.run
+**chọn file  qt-opensource-linux-x64-android-5.7.1.run**
 ``` c++
 chmod +x file.run
 
@@ -46,10 +46,10 @@ mkdir ~/opencv_build && cd ~/opencv_build
 
 [contrib]: https://github.com/opencv/opencv_contrib/archive/3.4.3.zip
 
-// extract file .zip  and rename folder opencv-3.4.3 to opencv, rename folder opencv_contrib-3.4.3 to opencv_contrib
+**extract file .zip  and rename folder opencv-3.4.3 to opencv, rename folder opencv_contrib-3.4.3 to opencv_contrib**
 
 
-// copy 2 folder opencv, opencv_contrib to folder opencv_build
+**copy 2 folder opencv, opencv_contrib to folder opencv_build**
 
 ``` c++
 cd ~/opencv_build/opencv 
@@ -73,11 +73,11 @@ make -j4    (or -j8 typing "nproc" on terminal will be let you knows -j4 or -j8)
 sudo make install
 ``` 
 
-// check version typing "pkg-config --modversion opencv"
+**check version typing "pkg-config --modversion opencv"**
 
 ## How to install ROS 
 
-Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse" like picture
+**Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse" like picture**
 
 ![](https://lh5.googleusercontent.com/u6aRh__8rH7IlFmKwTcZFA9_2nFFbBJmzjdHoBFw_wcB-YarRDcPoxLzymf6qEGmPZVcGy9stcef3PZaWilZX7DgqlLkacnyrkO2_-tU7FlNi829_JyH=w773)
 
@@ -101,7 +101,7 @@ source ~/.bashrc
 sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential
 ```
 
-Create catkin workspace
+**Create catkin workspace**
 
 ``` c++
 mkdir -p ~/catkin_ws/src
@@ -119,7 +119,7 @@ sudo apt-get install ros-melodic-rosbridge-server
 
 ``` 
 
-dowload packge here and copy to folder  "src"  in  "catkin_ws/"
+**dowload packge here and copy to folder  "src"  in  "catkin_ws/"**
 
  
 [ROS_Package_example][ROS]
@@ -134,4 +134,7 @@ catkin_make
 
 roslaunch lane_detect lane_detect.launch
 ``` 
+
+
+
 
