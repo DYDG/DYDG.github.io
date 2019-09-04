@@ -4,6 +4,29 @@ date:   2019-07-22 04:44:23
 categories: [Dyleson]
 tags: [setup]
 ---
+## How to install Fcitx
+**Mỗi loại đều có ưu điểm riêng nhưng bộ gõ đang được phát triển mạnh hơn cả là Fcitx, hỗ trợ các môi trường khách nhau như (Gtk, gtk3, qt4, qt5) nên bài này mình hướng dẫn sử dụng fcitx.**
+
+**Sau khi cài đặt ubuntu xong thì:**
+**Gõ lệnh:**
+```c++
+sudo apt-get update
+sudo apt-get install fcitx fcitx-frontend-gtk2 fcitx-frontend-gtk3 fcitx-frontend-qt4 fcitx-frontend-qt5 fcitx-unikey
+```
+**Config fcitx là xim mặc định**
+Gõ lệnh:
+```c++
+sudo im-config
+```
+**Chọn Fcitx trong danh sách các xim bên trong vào ok để đóng. Done ! khởi động lại máy tính để hoàn thành**
+**Thêm fcitx-unikey vào danh sách bộ gõ**
+**Gõ lệnh:**
+```c++
+fcitx-configtool
+```
+**Gõ unikey trong ô tìm kiếm và bấm dấu mũ tên --> or add**
+**Well done! bấm OK để đóng và vào applications bất kỳ gõ Ctrl + Space để kích hoạt bộ gõ unikey và gõ thôi.**
+
 ## How to install Qt 5.7.1
 
 [Download Qt 5.7.1 ][QT]
