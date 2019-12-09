@@ -17,18 +17,19 @@ Choose the options that suit you best. When prompted to choose instalation type,
 Size: 30-50GB
 Type: Primary
 Use As: ext4 Journaling file system
+Mount Point: /
 
-**Mount Point: /**
-swap (optional)
+**swap (optional)**
 Size: see this post to decide on a size (and whether you want swap at all)
 Type: Logical
 Use As: swap area
-home (optional, check this post for more info)
+
+**home (optional, check this post for more info)**
 Size: the rest of your free space, generally
 Type: Logical
 Use As: ext4 Journaling file system
 
-**Mount Point: /home**
+Mount Point: /home
 ### 3. Set up your HDD to mount automatically on boot
 Easiest way to do this imo is through the gnome-disks GUI tool (to use it, just open a terminal 
 - Ctrl+Alt+T, type in sudo gnome-disks and enter your password). Select your HDD, click on the cogwheels -> "Edit Mount Options...", enable "Mount at system startup" and choose a mount point (for example, /mnt/sda1 or whatever that device is identified as, or /media/user/DATA).
