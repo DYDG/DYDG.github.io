@@ -4,6 +4,41 @@ date:   2019-07-22 04:44:23
 categories: [Dyleson]
 tags: [setup]
 ---
+## How to install Ubuntu 18.04 on SSD+HDD
+Step by step tutorial (just skip what you already did):
+
+### 1. Boot from the installation drive
+Create a bootable USB drive with the installation image and then boot from it to begin the OS installation.
+
+### 2. Go through the installation process
+Choose the options that suit you best. When prompted to choose instalation type, select "Something Else" to create the partitions for the OS. To create a partition, just click the "+" sign on "free space". You will need to create the following partitions on your SSD:
+
+**root**
+Size: 30-50GB
+Type: Primary
+Use As: ext4 Journaling file system
+
+**Mount Point: /**
+swap (optional)
+Size: see this post to decide on a size (and whether you want swap at all)
+Type: Logical
+Use As: swap area
+home (optional, check this post for more info)
+Size: the rest of your free space, generally
+Type: Logical
+Use As: ext4 Journaling file system
+
+**Mount Point: /home**
+### 3. Set up your HDD to mount automatically on boot
+Easiest way to do this imo is through the gnome-disks GUI tool (to use it, just open a terminal 
+- Ctrl+Alt+T, type in sudo gnome-disks and enter your password). Select your HDD, click on the cogwheels -> "Edit Mount Options...", enable "Mount at system startup" and choose a mount point (for example, /mnt/sda1 or whatever that device is identified as, or /media/user/DATA).
+
+### 4. Link ~ (/home/user) media folders to the HDD for easy access
+You will have a few default media folders in your ~ folder, which you might want to have on the HDD instead. 
+To move them to the HDD while still being able to access them easily from /home/user, you will need to move those folders to the HDD (or just delete them and create other folders) and then create symbolic links instead, using a terminal command like:
+```c++
+ln -s /media/dy/DATA/Downloads ~/Downloads
+```
 ## How to install Fcitx
 **Mỗi loại đều có ưu điểm riêng nhưng bộ gõ đang được phát triển mạnh hơn cả là Fcitx, hỗ trợ các môi trường khách nhau như (Gtk, gtk3, qt4, qt5) nên bài này mình hướng dẫn sử dụng fcitx.**
 
@@ -26,7 +61,6 @@ fcitx-configtool
 ```
 **Gõ unikey trong ô tìm kiếm và bấm dấu mũ tên --> or add**
 **Well done! bấm OK để đóng và vào applications bất kỳ gõ Ctrl + Space để kích hoạt bộ gõ unikey và gõ thôi.**
-
 ## How to install Qt 5.7.1
 
 [Download Qt 5.7.1 ][QT]
