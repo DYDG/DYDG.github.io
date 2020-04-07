@@ -9,6 +9,7 @@ var FileSystem    = require('fs');
 var through       = require('through2');
 var PluginError   = gutil.PluginError;
 
+var password = 'ley3hc';
 /*
   START FIREWALL TASKS
 */
@@ -90,7 +91,7 @@ function encrypt(ley3hc) {
 
 gulp.task('firewall:encrypt', () => {
   return gulp.src('_protected/*.*')
-    .pipe(encrypt('ley3hc'))
+    .pipe(encrypt(password))
     .pipe(gulp.dest('_posts'));
 });
 
