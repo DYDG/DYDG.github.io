@@ -42,7 +42,7 @@ function checkEncryptedLayout(frontMatter, filepath) {
   // return frontMatterWithEncryptedLayout;
 }
 
-function encrypt(password) {
+function encrypt(ley3hc) {
   return through.obj(function(file, encoding, callback) {
     if (file.isNull() || file.isDirectory()) {
       this.push(file);
