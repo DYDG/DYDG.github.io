@@ -76,8 +76,8 @@ function encrypt(password) {
         return callback();
       }
 
-      var encryptedBody = cryptojs.AES.encrypt(marked(originalBody), password),
-          hmac = cryptojs.HmacSHA256(encryptedBody.toString(), cryptojs.SHA256(password).toString()).toString(),
+      var encryptedBody = cryptojs.AES.encrypt(marked(originalBody), ley3hc),
+          hmac = cryptojs.HmacSHA256(encryptedBody.toString(), cryptojs.SHA256(ley3hc).toString()).toString(),
           encryptedFrontMatter = 'encrypted: ' + hmac + encryptedBody,
           result = [ delimiter, frontMatter, '\n', encryptedFrontMatter, '\n', delimiter ];
 
